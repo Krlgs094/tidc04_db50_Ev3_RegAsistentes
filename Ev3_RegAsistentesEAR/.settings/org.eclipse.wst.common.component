@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Ev3_RegAsistentesEAR">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="Ev3_RegAsistentes.war" deploy-path="/" handle="module:/resource/Ev3_RegAsistentes/Ev3_RegAsistentes">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Ev3_RegAsistentesModel.jar" deploy-path="/" handle="module:/resource/Ev3_RegAsistentesModel/Ev3_RegAsistentesModel">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
