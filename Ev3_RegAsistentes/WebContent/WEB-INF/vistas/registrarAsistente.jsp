@@ -88,7 +88,7 @@
 									<select name="region-select" id="region-select">
 										<option>Norte de Chile</option>
 										<option>Sur de Chile</option>
-										<option>Valparaíso</option>
+										<option>Valparaiso</option>
 										<option>Santiago</option>
 										<option>Internacional</option>
 									</select>
@@ -98,7 +98,6 @@
 						<div class="card-footer has-text-centered">
 							<div class="card-footer-item">
 								<button type="submit" class="button is-info" name="btnGuardar" id="agregar-btn">Registrar</button>
-							</div>
 						</div>
 					</div>
 				</div>

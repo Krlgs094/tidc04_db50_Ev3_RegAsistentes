@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
+import javax.persistence.EntityManagerFactory;
 
 import cl.inacap.Ev_3RegAsistentesModel.dto.Asistente;
 
@@ -16,7 +17,7 @@ import cl.inacap.Ev_3RegAsistentesModel.dto.Asistente;
 @LocalBean
 public class AsistenteDAO implements AsistenteDAOLocal {
 
-	
+
 	private static List<Asistente> asistentes = new ArrayList<>();
     /**
      * Default constructor. 

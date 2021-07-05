@@ -2,6 +2,8 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <jsp:include page="../templates/header.jsp"></jsp:include>
+<% int c;
+	c=0;%>
 <main class="container mt-6">
 	<div class="columns is-centered">
 		<div class="column is-8">
@@ -26,15 +28,17 @@
 					<table class="table is-hovered is-bordered is-fullwidth">
 						<thead class="has-background-warning">
 							<tr>
+								<th></th>
 								<th>Nombre Completo</th>
 								<th>Empresa</th>
-								<th>Región</th>
+								<th>Region</th>
 								<th>Estado</th>
 							</tr>
 						</thead>
 						<tbody>
 							<c:forEach var="asistente" items="${asistentes}">
 								<tr>
+									<td>${c=c+1}</td>
 									<td>${asistente.nombre} ${asistente.apellido}</td>
 									<td>${asistente.empresa}</td>
 									<td>${asistente.region}</td>
@@ -43,6 +47,13 @@
 							</c:forEach>
 						</tbody>
 					</table>
+				</div>
+			</div>
+			<div class="Columns is-centered">
+				<div class="column is-8 is-centered">
+					<div class="box is-centered">
+						La cantidad total de esistentes es de: ${c}
+					</div>
 				</div>
 			</div>
 		</div>
